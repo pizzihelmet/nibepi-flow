@@ -11,12 +11,15 @@ cp flows.json flows_backup_$(date +%F_%H%M).json
 ```
 
 ## Uppdatera flows.json
-Ladda ner `flows.json` från detta repo och ersätt filen här på din Pi:
+Ladda ner `flows.json` från detta repo och ersätt filen på din Pi:
 ```
+cd ~/.node-red
 curl -L -o flows.json https://raw.githubusercontent.com/pizzihelmet/nibepi-flow/vv-ai-flow/flows.json
 ```
 
 Starta om Node-RED efteråt:
-`sudo systemctl restart nodered`
+```
+sudo systemctl restart nodered
+```
 
 https://github.com/pizzihelmet/node-red-contrib-nibepi/tree/vv-ai
